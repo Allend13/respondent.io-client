@@ -4,18 +4,17 @@
   "description": "respondentio client",
   "main": "app.js",
   "engines": {
-    "node": "8.9.4"
+    "node": "^8.2.1"
   },
   "scripts": {
+    "start": "node app",
     "test": "mocha test/helpers/browser.js test/*.spec.js ",
     "test-dev": "mocha -w test/helpers/browser.js test/*.spec.js ",
     "dev": "NODE_ENV=locale webpack-dev-server -d --config ./webpack/webpack.config.js",
     "build-dev": "NODE_ENV=development webpack --config ./webpack/webpack.config.dev.js",
     "build-prod": "NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js -p",
     "styleguide": "styleguidist server --config ./styleguide.config.js",
-    "styleguide:build": "styleguidist build --config ./styleguide.config.js",
-    "heroku-postbuild": "NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js -p",
-    "postinstall": "npm install"
+    "styleguide:build": "styleguidist build --config ./styleguide.config.js"
   },
   "repository": "https://github.com/Allend13/respondent.io",
   "author": "Eugene Allenov",

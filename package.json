@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "respondentio client",
   "main": "app.js",
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "test": "mocha test/helpers/browser.js test/*.spec.js ",
     "test-dev": "mocha -w test/helpers/browser.js test/*.spec.js ",

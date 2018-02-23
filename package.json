@@ -15,7 +15,7 @@
     "build-prod": "NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js -p",
     "styleguide": "styleguidist server --config ./styleguide.config.js",
     "styleguide:build": "styleguidist build --config ./styleguide.config.js",
-    "heroku-postbuild": "yarn install"
+    "heroku-postbuild": "npm install"
   },
   "repository": "https://github.com/Allend13/respondent.io",
   "author": "Eugene Allenov",
